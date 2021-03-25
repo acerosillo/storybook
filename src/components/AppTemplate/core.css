@@ -1,0 +1,28 @@
+@import 'reset-css';
+@import 'normalize.css';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: initial;
+  margin: initial;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+  min-height: 100vh;
+  font-variant-ligatures: none;
+  font-weight: 400;
+  color: var(--color-grey-dark);
+}
+
+a {
+  color: var(--color-basic-white);
+  text-decoration: none;
+}

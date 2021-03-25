@@ -1,0 +1,13 @@
+.dottedBackground {
+  &::before {
+    content: '';
+    background-image: radial-gradient(#d1eaf4 20%, #fff 20%);
+    background-position: 0 0;
+    background-size: 7px 7px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}

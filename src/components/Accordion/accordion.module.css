@@ -1,0 +1,46 @@
+.accordionItem {
+  background: var(--color-background-four);
+  padding: 20px;
+  margin-bottom: 5px;
+}
+
+.accordionButton:focus,
+.focusWrapper:focus {
+  outline: none;
+}
+
+.accordionButton:focus > .focusWrapper {
+  box-shadow: 0 0 2px 2px var(--color-grey-dark);
+}
+
+.accordionButton {
+  cursor: pointer;
+  border: none;
+  position: relative;
+  padding-right: 35px;
+}
+
+.accordionPanel {
+  margin-top: 30px;
+}
+
+.accordionHeading::after {
+  display: inline-block;
+  content: '';
+  background-image: url('../../../static/menu-drop-down.svg');
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  vertical-align: middle;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  transition: all 0.3s;
+}
+
+.accordionButton[aria-expanded='true'] .accordionHeading::after,
+.accordionButton[aria-selected='true'] .accordionHeading::after {
+  transform: rotateZ(-180deg);
+}

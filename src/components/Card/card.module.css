@@ -1,0 +1,27 @@
+.container {
+  position: relative;
+  margin: -75px auto 0;
+  max-width: 596px;
+
+  @media (--l) {
+    max-width: 705px;
+  }
+}
+
+.card {
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1), 0 3px 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  background: var(--color-basic-white);
+  padding: var(--section-padding-m) var(--section-padding-s);
+  margin: 0 var(--section-padding-s);
+
+  @media (--m) {
+    padding: 20px var(--section-padding-m) 37px;
+    margin: 0;
+  }
+
+  @media (--l) {
+    padding: 24px 70px 50px;
+  }
+}

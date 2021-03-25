@@ -1,0 +1,29 @@
+.container {
+  background: var(--color-background-one);
+  margin-top: 60px;
+  padding-bottom: 50px;
+
+  @media (--m) {
+    padding-bottom: 200px;
+  }
+}
+
+.innerWrapper {
+  overflow: hidden;
+  max-width: var(--section-maxWidth);
+  padding: 0 var(--section-padding-s);
+  margin: 0 auto;
+
+  @media (--m) {
+    padding: 0 var(--section-padding-m);
+  }
+}
+
+.heading {
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.faqParagraph:not(:last-child) {
+  margin-bottom: 20px;
+}
